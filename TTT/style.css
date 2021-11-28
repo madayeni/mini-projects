@@ -1,0 +1,71 @@
+:root {
+				--size: 75px;
+}
+
+* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+}
+
+.title {
+				text-align: center;
+				margin: 10px auto;
+				font-size: 30px;
+}
+
+.square {
+				width: var(--size);
+				height: var(--size);
+				background: lightblue;
+				padding: 5px;
+				margin: 5px;
+				font-size: var(--size);
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.5s linear;
+}
+
+.square.win {
+				transform: scale(1.3);
+}
+
+.square.X {
+				background: orange;
+}
+
+.square.O {
+				background: blue;
+}
+
+.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				padding: 60px;
+}
+
+.board {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				
+}
+
+.restart {
+				padding: 10px 30px;
+				margin: 10px auto;
+				text-align: center;
+				background: #333;
+				color: white;
+				font-weight: 600;
+				width: 200px;
+				font-size: 20px;
+}
+
+.stats {
+				font-size: 30px;
+}
